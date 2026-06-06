@@ -1,36 +1,24 @@
-# Dependencies
-node_modules/
+# ── Frontend ──────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+frontend/.vite/
+.vite/
 
-# Build output
-dist/
-
-# Environment variables - NEVER commit these
-.env
-*.env
-.env.local
-.env.production
-
-# Keep example files (safe to commit)
-!.env.example
-!backend/.env.example
-
-# Python
+# ── Backend ───────────────────────────────────────────────
 backend/venv/
 backend/__pycache__/
 backend/*.pyc
-backend/*.pyo
-**/__pycache__/
-*.pyc
-
-# SQLite database file (local data)
 backend/inventory.db
+backend/.env
 
-# Logs
-*.log
+# ── Keep example files ────────────────────────────────────
+!frontend/.env.example
+!backend/.env.example
 
-# OS
+# ── OS ────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
-
-# Vite
-*.local
+*.log
