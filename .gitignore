@@ -10,6 +10,10 @@ dist/
 .env.local
 .env.production
 
+# Keep example files (safe to commit)
+!.env.example
+!backend/.env.example
+
 # Python
 backend/venv/
 backend/__pycache__/
